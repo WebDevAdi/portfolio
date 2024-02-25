@@ -15,7 +15,7 @@ function Home() {
   }
   return (
     <div>
-      <div className="flex md:flex-row flex-col-reverse justify-around items-center px-10 my-40">
+      <div className="flex md:flex-row flex-col-reverse justify-around items-center px-10 my-20 sm:my-40 ">
         <div>
           {/* Intro */}
           <div className="max-w-[800px] text-2xl md:text-left text-center my-10">
