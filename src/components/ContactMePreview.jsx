@@ -56,11 +56,11 @@ function ContactMePreview() {
         
       </div>
     </div>
-    <div className="flex justify-center my-8">
+    {/* <div className="flex justify-center my-8">
       <NavLink to={'/contact'}>
       <button className="text-white font-bold bg-blue-500 rounded p-1 px-5 text-lg">Visit Contact Page</button>
       </NavLink>
-    </div>
+    </div> */}
   </div>
   )
 }

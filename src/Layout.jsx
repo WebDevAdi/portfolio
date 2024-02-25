@@ -7,10 +7,10 @@ function Layout() {
   return (
     <div>
       <Navbar />
-      <div className="max-w-[1200px] mx-auto mb-80">
+      <div className="max-w-[1200px] mx-auto">
       <Outlet />
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

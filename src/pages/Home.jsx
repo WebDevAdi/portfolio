@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import profilePhoto from "../assets/profilePhoto.png";
 import Technologies from "../components/Technologies";
 import Project from "../components/Project";
@@ -7,9 +7,15 @@ import myPhoto from "../assets/myPhoto.png";
 import ContactMePreview from "../components/ContactMePreview";
 
 function Home() {
+  const contact = useRef(null)
+
+
+  const handleHireMe = () =>{
+    contact.current.scrollIntoView({behavior:'smooth'})
+  }
   return (
     <div>
-      <div className="flex md:flex-row flex-col-reverse justify-around items-center my-20 px-10">
+      <div className="flex md:flex-row flex-col-reverse justify-around items-center px-10 my-40">
         <div>
           {/* Intro */}
           <div className="max-w-[800px] text-2xl md:text-left text-center my-10">
@@ -23,7 +29,7 @@ function Home() {
               <button className="text-white bg-blue-500 p-1 px-5 font-bold text-lg rounded  ">
               <a href="https://drive.google.com/file/d/1GookPM0ilBTpmiWDYCHDcZfqQDRGLEnP/view?usp=drive_link"  target="_blank">Resume</a>
               </button>
-              <button className="text-white bg-orange-500 p-1 px-5 font-bold text-lg rounded  mx-3">
+              <button onClick={handleHireMe} className="text-white bg-orange-500 p-1 px-5 font-bold text-lg rounded  mx-3">
                 Hire Me !
               </button>
             </div>
@@ -37,7 +43,7 @@ function Home() {
       </div>
 
       {/* Technologies description */}
-      <div>
+      <div className="my-40">
         <h1 className="font-semibold text-center text-4xl">
           Technologies I am Good At{" "}
         </h1>
@@ -45,18 +51,18 @@ function Home() {
       </div>
 
       {/* projects */}
-      <div className="my-20">
+      <div className="my-40">
         <h1 className="text-4xl font-semibold text-center my-5">Projects</h1>
         <div className="grid sm:grid-cols-2 md:grid-cols-3">
           {/* projects */}
           <div className="mx-4">
-            <Project />
+            <Project title="Bucketbuy" description="Designed and implemented a cutting-edge electronic e-commerce site using MERN stack. This project highlights my skills in creating seamless, modern web experiences for users to explore and purchase the latest tech gadgets." livePreview="https://bucketbuy.store" sourceCode="https://github.com/WebDevAdi?tab=repositories"/>
           </div>
           <div className="mx-4">
-            <Project />
+            <Project title="Bucketbuy Seller" description="Seller-BucketBuy is a platform for listing, updating, and managing electronic products destined for sale on bucketbuy.store. Seamlessly integrated with seller accounts, it simplifies product management for enhanced efficiency and convenience." livePreview="https://seller-bucketbuy.onrender.com" sourceCode="https://github.com/WebDevAdi?tab=repositories" />
           </div>
           <div className="mx-4">
-            <Project />
+            <Project title="Deepnapsoftech Clone" description="Presenting a React clone of deepnapsoftech, a leading web design and development company. This project showcases my React skills while replicating the professional aesthetic and functionality of the original site." livePreview="https://deepnapsoftechclone.onrender.com/" sourceCode="https://github.com/WebDevAdi/deepnapsoftechclone"/>
           </div>
         </div>
         <div className="my-10 text-center">
@@ -67,7 +73,7 @@ function Home() {
       </div>
 
       {/* About Me */}
-      <div>
+      <div className="my-40">
         <h1 className="text-4xl font-semibold text-center my-5">Who Am I ?</h1>
         <p className="text-lg text-center">
           Hi,I'm <span className="font-semibold">Aditya Chauhan</span>, a
@@ -101,7 +107,7 @@ function Home() {
       </div>
 
       {/* Contact Me */}
-     <div>
+     <div className="my-40" ref={contact}>
       <ContactMePreview />
      </div>
 

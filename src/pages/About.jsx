@@ -17,16 +17,16 @@ function About() {
         <div className="mt-6 text-2xl font-bold">Skills</div>
         <div>
           <div className="my-1">
-            <i class="fa-brands fa-html5"></i> HTML5
+            <i className="fa-brands fa-html5"></i> HTML5
           </div>
           <div className="my-1">
-            <i class="fa-brands fa-css3-alt"></i> CSS3
+            <i className="fa-brands fa-css3-alt"></i> CSS3
           </div>
           <div className="my-1">
-            <i class="fa-brands fa-js"></i> JavaScript
+            <i className="fa-brands fa-js"></i> JavaScript
           </div>
           <div className="my-1">
-            <i class="fa-brands fa-react"></i> ReactJs
+            <i className="fa-brands fa-react"></i> ReactJs
           </div>
           <div className="my-1 flex">
             <div className="w-5">
@@ -42,7 +42,7 @@ function About() {
             <div className="ml-1">Tailwind</div>
           </div>
           <div className="my-1">
-            <i class="fa-brands fa-node"></i> NodeJs
+            <i className="fa-brands fa-node"></i> NodeJs
           </div>
           <div className="my-1 flex">
             <div className="w-5 border-2 rounded-full">
@@ -74,7 +74,7 @@ function About() {
             <div className="ml-1">MongoDB</div>
           </div>
           <div className="my-1">
-            <i class="fa-brands fa-github"></i> Github
+            <i className="fa-brands fa-github"></i> Github
           </div>
         </div>
       </div>

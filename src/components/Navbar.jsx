@@ -1,14 +1,13 @@
-import React from "react";
+import React, { useRef } from "react";
 import logo from "../assets/logo.png";
 import NavItems from "./NavItems";
 import { NavLink } from "react-router-dom";
 
 function Navbar() {
-    const navDropdown = document.querySelector('.nav-dropdown')
-    console.log(navDropdown);
-
+  const navDrop = useRef(null)
     const handleNavDropdown = () =>{
-        navDropdown?.classList.toggle('nav-drop-smooth')
+      navDrop.current.classList.toggle('nav-drop-smooth')
+      // navDrop.current.classList.toggle('overflow-hidden')
     }
 
   return (
@@ -19,10 +18,12 @@ function Navbar() {
             {/* hambergur icon */}
             <i className="fa-solid fa-bars"></i>
           </div>
+          <NavLink to={'/'}>
           <div className="w-32">
             {/* Logo */}
             <img src={logo} className="object-contain" alt="" />
           </div>
+          </NavLink>
         </div>
         <div className="flex ">
           {/* nav items */}
@@ -31,11 +32,11 @@ function Navbar() {
           </div>
 
           <NavLink to={'https://github.com/WebDevAdi'} target="_blank">
-          <div className="mx-5 cursor-pointer text-lg md:text-lg border rounded px-3 py-1 text-white bg-slate-800"> <i class="fa-brands fa-github"></i> Github</div>
+          <div className="mx-5 cursor-pointer text-lg md:text-lg border rounded px-3 py-1 text-white bg-slate-800"> <i className="fa-brands fa-github"></i> Github</div>
           </NavLink>
         </div>
       </div>
-      <div className="nav-dropdown md:h-full border-t border-b md:flex lg:hidden justify-center overflow-hidden">
+      <div ref={navDrop} className="nav-dropdown h-0 overflow-hidden md:h-full border-t  md:flex lg:hidden justify-center">
         <NavItems />
       </div>
     </nav>
