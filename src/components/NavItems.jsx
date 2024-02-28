@@ -25,7 +25,7 @@ function NavItems() {
         </NavLink>
       </div>
       <div className="hover:font-semibold cursor-pointer mx-0 md:mx-5 text-2xl py-3 md:py-0 hover:bg-slate-400 md:hover:bg-white">
-        <a href="https://drive.google.com/file/d/1GookPM0ilBTpmiWDYCHDcZfqQDRGLEnP/view?usp=drive_link"  target="_blank">Resume</a>
+        <a href="https://drive.google.com/file/d/1iJhvQW7v0eUJRb11HKnimQjAIhf51-cx/view?usp=sharing"  target="_blank">Resume</a>
       </div>
       <div className="hover:font-semibold mx-0 md:mx-5 text-2xl py-3 md:py-0 hover:bg-slate-400 md:hover:bg-white">
         <NavLink

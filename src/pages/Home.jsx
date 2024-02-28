@@ -27,7 +27,7 @@ function Home() {
             Express.js, React, and Node.js."
             <div className="my-4">
               <button className="text-white bg-blue-500 p-1 px-5 font-bold text-lg rounded  ">
-              <a href="https://drive.google.com/file/d/1GookPM0ilBTpmiWDYCHDcZfqQDRGLEnP/view?usp=drive_link"  target="_blank">Resume</a>
+              <a href="https://drive.google.com/file/d/1iJhvQW7v0eUJRb11HKnimQjAIhf51-cx/view?usp=sharing"  target="_blank">Resume</a>
               </button>
               <button onClick={handleHireMe} className="text-white bg-orange-500 p-1 px-5 font-bold text-lg rounded  mx-3">
                 Hire Me !
@@ -53,14 +53,15 @@ function Home() {
       {/* projects */}
       <div className="my-40">
         <h1 className="text-4xl font-semibold text-center my-5">Projects</h1>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3">
+        <div className="grid sm:grid-cols-2 md:grid-cols-2">
           {/* projects */}
           <div className="mx-4">
             <Project title="Bucketbuy" description="Designed and implemented a cutting-edge electronic e-commerce site using MERN stack. This project highlights my skills in creating seamless, modern web experiences for users to explore and purchase the latest tech gadgets." livePreview="https://bucketbuy.store" sourceCode="https://github.com/WebDevAdi?tab=repositories"/>
           </div>
-          <div className="mx-4">
-            <Project title="Bucketbuy Seller" description="Seller-BucketBuy is a platform for listing, updating, and managing electronic products destined for sale on bucketbuy.store. Seamlessly integrated with seller accounts, it simplifies product management for enhanced efficiency and convenience." livePreview="https://seller-bucketbuy.onrender.com" sourceCode="https://github.com/WebDevAdi?tab=repositories" />
-          </div>
+          {/* Comming Soon ... */}
+          {/* <div className="mx-4">
+            <Project title="Bucketbuy Seller" description="Seller-BucketBuy is a platform for listing, updating, and managing electronic products destined for sale on bucketbuy.store. Seamlessly integrated with seller accounts, it simplifies product management for enhanced efficiency and convenience. Note* This site is still not completed yet" livePreview="https://seller-bucketbuy.onrender.com" sourceCode="https://github.com/WebDevAdi?tab=repositories" />
+          </div> */}
           <div className="mx-4">
             <Project title="Deepnapsoftech Clone" description="Presenting a React clone of deepnapsoftech, a leading web design and development company. This project showcases my React skills while replicating the professional aesthetic and functionality of the original site." livePreview="https://deepnapsoftechclone.onrender.com/" sourceCode="https://github.com/WebDevAdi/deepnapsoftechclone"/>
           </div>

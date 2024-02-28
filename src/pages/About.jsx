@@ -108,7 +108,7 @@ function About() {
           </div>
           <div>
             <li className="underline">
-              <a href="">View Report Card</a>
+              <a href="https://drive.google.com/file/d/1DE1btFyDQMG9zn0WpcYzeVFXD5cg7l48/view?usp=sharing" target="_blank">View Report Card</a>
             </li>
           </div>
         </div>
@@ -129,7 +129,7 @@ function About() {
           </div>
           <div>
             <li className="underline">
-              <a href="">View Report Card</a>
+              <a href="https://drive.google.com/file/d/1aFMc13_aHreRF4a-F-gBDh3VsITHKcef/view?usp=sharing" target="_blank">View Report Card</a>
             </li>
           </div>
         </div>
