@@ -53,7 +53,7 @@ function Home() {
       {/* projects */}
       <div className="my-40">
         <h1 className="text-4xl font-semibold text-center my-5">Projects</h1>
-        <div className="grid sm:grid-cols-2 md:grid-cols-2">
+        <div className="grid ">
           {/* projects */}
           <div className="mx-4">
             <Project title="Bucketbuy" description="Designed and implemented a cutting-edge electronic e-commerce site using MERN stack. This project highlights my skills in creating seamless, modern web experiences for users to explore and purchase the latest tech gadgets." livePreview="https://bucketbuy.store" sourceCode="https://github.com/WebDevAdi?tab=repositories"/>
@@ -62,9 +62,11 @@ function Home() {
           {/* <div className="mx-4">
             <Project title="Bucketbuy Seller" description="Seller-BucketBuy is a platform for listing, updating, and managing electronic products destined for sale on bucketbuy.store. Seamlessly integrated with seller accounts, it simplifies product management for enhanced efficiency and convenience. Note* This site is still not completed yet" livePreview="https://seller-bucketbuy.onrender.com" sourceCode="https://github.com/WebDevAdi?tab=repositories" />
           </div> */}
-          <div className="mx-4">
+
+
+          {/* <div className="mx-4">
             <Project title="Deepnapsoftech Clone" description="Presenting a React clone of deepnapsoftech, a leading web design and development company. This project showcases my React skills while replicating the professional aesthetic and functionality of the original site." livePreview="https://deepnapsoftechclone.onrender.com/" sourceCode="https://github.com/WebDevAdi/deepnapsoftechclone"/>
-          </div>
+          </div> */}
         </div>
         <div className="my-10 text-center">
           <button className="text-white bg-blue-500 font-bold px-4 p-1 rounded">
