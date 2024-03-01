@@ -64,9 +64,9 @@ function Home() {
           </div> */}
 
 
-          {/* <div className="mx-4">
+          <div className="mx-4">
             <Project title="Deepnapsoftech Clone" description="Presenting a React clone of deepnapsoftech, a leading web design and development company. This project showcases my React skills while replicating the professional aesthetic and functionality of the original site." livePreview="https://deepnapsoftechclone.onrender.com/" sourceCode="https://github.com/WebDevAdi/deepnapsoftechclone"/>
-          </div> */}
+          </div>
         </div>
         <div className="my-10 text-center">
           <button className="text-white bg-blue-500 font-bold px-4 p-1 rounded">

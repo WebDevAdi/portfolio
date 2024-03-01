@@ -21,9 +21,9 @@ function Projects() {
           {/* <div className="">
             <Project title="Bucketbuy Seller" description="Seller-BucketBuy is a platform for listing, updating, and managing electronic products destined for sale on bucketbuy.store. Seamlessly integrated with seller accounts, it simplifies product management for enhanced efficiency and convenience." livePreview="https://seller-bucketbuy.onrender.com" sourceCode="https://github.com/WebDevAdi?tab=repositories" />
           </div> */}
-          {/* <div className="">
+          <div className="">
             <Project title="Deepnapsoftech Clone" description="Presenting a React clone of deepnapsoftech, a leading web design and development company. This project showcases my React skills while replicating the professional aesthetic and functionality of the original site." livePreview="https://deepnapsoftechclone.onrender.com/" sourceCode="https://github.com/WebDevAdi/deepnapsoftechclone"/>
-          </div> */}
+          </div>
 
       </div>
     </div>
